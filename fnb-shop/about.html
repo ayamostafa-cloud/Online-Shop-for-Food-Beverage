@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - F&B Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="about.html" class="active">about</a>
+
+ 
+    <header class="navbar">
+  <div class="logo">Food & Beverage</div>
+  
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav-links" class="nav-links">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="products.html" onclick="closeMenu()">Products</a>
+    <a href="about.html" onclick="closeMenu()">About</a>
+    <a href="contact.html" onclick="closeMenu()">Contact</a>
+  </nav>
+</header>
+  
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to F&B Shop — your one-stop destination for delicious food and refreshing beverages. We’re passionate about providing fresh, high-quality items made with care and attention to detail.</p>
+
+        <h2>Our Mission</h2>
+        <p>At F&B Shop, our mission is simple: deliver great taste, outstanding quality, and excellent customer service. Whether you’re craving a juicy burger, a refreshing smoothie, or a classic dessert, we’ve got you covered.</p>
+
+        <h2>Why Choose Us?</h2>
+        <ul>
+          <li>Fresh ingredients daily</li>
+          <li>Friendly and fast service</li>
+          <li>Affordable prices</li>
+          <li>Wide variety of food and drink options</li>
+        </ul>
+
+        <h2>Visit Us</h2>
+        <p>We are located in the heart of Taste City. Drop by and treat yourself to an unforgettable food experience!</p>
+      </div>
+    </section>
+    <section class="reviews-section">
+  <div class="container">
+    <h2>What Our Customers Say</h2>
+
+    <div class="review">
+      <p class="review-text">"Absolutely loved the burger and the fresh juices! Will definitely come back."</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="reviewer">– Sarah M.</p>
+    </div>
+
+    <div class="review">
+      <p class="review-text">"Delicious desserts and super friendly staff. Highly recommended!"</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="reviewer">– Ahmed R.</p>
+    </div>
+
+    <div class="review">
+      <p class="review-text">"The pasta was a bit spicy for me, but everything else was amazing."</p>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <p class="reviewer">– Lina K.</p>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>F&B Shop</h3>
+      <p>Premium food and beverage products with quality ingredients and exceptional taste.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>123 Flavor Street<br>
+      Taste City, TC 12345</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: info@deliciousbites.com</p>
+      <div class="social-icons">
+  <a href="#"><img src="assets/images/facebook.jpg" alt="Facebook" /></a>
+  <a href="#"><img src="assets/images/instagram.jpg" alt="Instagram" /></a>
+  <a href="#"><img src="assets/images/twitter.jpg" alt="Twitter" /></a>
+</div>
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Delicious Bites. All rights reserved.
+  </div>
+</footer>
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('open');
+  }
+
+  function closeMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
